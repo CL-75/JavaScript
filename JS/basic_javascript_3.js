@@ -15,7 +15,7 @@ function myFunctionMult() {
 
 function myFunctionMod() {
     var myMath = 5 % 3;
-    document.getElementById("MathMod").innerHTML = "5 / 3 = " + myMath;
+    document.getElementById("MathMod").innerHTML = "5 % 3 = " + myMath;
 }
 
 function myFunctionInc() {
