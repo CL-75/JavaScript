@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MAMA MIA'S PIZZERIA - CONFIRM ORDER</title>
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="./JS/pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/pizza.css"/>
+    </head>
+    <body class="Background">
+        <div id="Video_Wrapper">
+            <video autoplay muted loop id="Pizza_Video" class="videoBg">
+                <source src="./CSS/pizza.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="Column_1"> <!-- Contact form, right "column" -->
+			<h1>CONFIRM ORDER</h2> 
+				<form action="" method="get"> <!-- This specifies where to send the form data and how; it is left blank -->
+					<label><b>Name:</b></label>
+						<input type="text" placeholder="Please Enter Your Name">
+					<label><b>Phone Number:</b></label>
+						<input type="text" id="PhoneNumber" name="PhoneNumber" placeholder="Please Enter Your PhoneNumber">
+					<label><b>Address:</b></label>
+                        <input type="text" id="Address" name="Address" placeholder="Please Enter Your Address">
+                    <label><b>Card Number:</b></label>
+                        <input type="text" id="CardNum" name="CardNum" placeholder="Please Enter Your Credit Card Number">
+                    <label><b>CVV:</b></label>
+                        <input type="text" id="CVV" name="CVV" placeholder="Please Enter Your Credit Card CVV">
+						<input type="submit" value="Submit" onclick="showAlert()">
+				</form>
+		</div>
