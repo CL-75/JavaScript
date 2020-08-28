@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MAMA MIA'S PIZZERIA</title>
+        <META HTTP-EQUIV="content-type" CONTENT="text/html; charset=UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <script src="./JS/pizza.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/pizza.css"/>
+    </head>
+    <body class="Background">
+        <div id="Video_Wrapper">
+            <video autoplay muted loop id="Pizza_Video" class="videoBg">
+                <source src="./CSS/pizza.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <div class="Video_Text">
+
+       <div id="menuBG">
+           <h1 style="margin:0 0px 0 20px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"><center>MAMA MIA'S PIZZERIA</center></h1>
+           <center><h2>Online Order</h2></center>
+           <center><h3>Please Review Your Order Before Continuing to Payment</h3></center>
+           <input type="submit" value="Review Order" onclick="getReceipt()">
+           <br>
+           <input type="submit" value="Continue To Payment" onclick="location.href='./order.html';">
+
+
+           <form id="frmMenu">
+               <div class="menu left">
+                   <h3><u>Size:</u></h3>
+                   <input class="size" type="radio" name="Size" value="Single Slice">Single Slice<br>
+                   <input class="size" type="radio" name="Size" value="Personal">Personal<br>
+                   <input class="size" type="radio" name="Size" value="Medium">Medium<br>
+                   <input class="size" type="radio" name="Size" value="Large">Large<br>
+                   <input class="size" type="radio" name="Size" value="Extra Large">Extra Large<br>
+               </div>
+
+            <div class="menu right">
+                <h3><u>Meats:</u></h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Pepperoni">Pepperoni<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Sausage">Sausage<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Bacon">Bacon<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Ground Beef">Ground Beef<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Anchovies">Anchovies<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Grilled Chicken">Grilled Chicken<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Ham">Ham<br>
+            </div>
+            <div class="menu right">
+                <h3><u>Other Toppings:</u></h3>
+                <input class="toppings" type="checkbox" name="Topping" value="Extra Cheese">Extra Cheese<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Peppers">Peppers<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Spinach">Spinach<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Olives">Olives<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Pepperoncini">Pepperoncini<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Mushrooms">Mushrooms<br>
+                <input class="toppings" type="checkbox" name="Topping" value="Onions">Onions<br>
+
+            </div>
+            <div id="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+           </form> 
+        </div>
+       </div>
+      
+    </body>
+</html>
