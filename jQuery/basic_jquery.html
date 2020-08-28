@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    </head>
+
+    <script>
+
+        $(document).ready(function () {
+           $("html").append (                // Using jQuery to display a heading and 3 paragraph elements
+              "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                        </div>\
+                    </body>"
+           );
+
+           $("#2").css({"color":"lightgreen"});      // Targeting only the paragraph with the #2 id and making the text red
+           $("#3").click(function () {       // Targeting the #3 paragraph id and removing the #1 paragraph when #3 is clicked
+               $('#1').hide();
+           });
+        });
+    </script>
+
+
+</html>
