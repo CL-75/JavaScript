@@ -1,0 +1,192 @@
+h1, h2,{
+    font-family: Helvetica;
+    color:white;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+}
+
+div {
+    font-family: "Baskerville", sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+#menuBG {
+    width: 400px;
+    height: 470px;
+    margin: 10px auto;
+}
+
+#frmMenu {
+    width: 400px;
+    height: 200px;
+}
+
+#totalPrice {
+    width: 200px;
+    height: 190px;
+    margin: 0 auto;
+    float: right;
+}
+
+.left {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.right {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.center {
+    width: 200px;
+    height: 200px;
+    float: center;
+}
+
+#showText {
+    width: 200px;
+    height: 190px;
+    margin: 0px auto;
+    float: left;
+}
+
+#cart {
+    top: 0;
+    margin: 0px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#btnOrder {
+    margin: 10px 0px 0px 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#new_button {
+    margin: 10px 0px 0px 10px;
+    width: 100px;
+    height: 40px;
+}
+
+#Pizza_Video {
+	position: fixed; 
+	right: 0; 
+	bottom: 0; 
+    min-width: 100%; 
+    object-fit: fill;
+    z-index: -1;
+    filter: grayscale(80%);
+}
+
+.Video_Text { 
+	width: 100%;
+	padding: 20px; /* This adds padding around the text so that the background goes slightly beyond the text */
+	margin-top: 23%;
+}
+
+.videoBgWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.videoBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Column_1 {
+    margin: auto;
+    text-align: center;  
+	width: 50%; /* This ensures one column takes up half the page width */
+	padding: 10px; 
+	height: 400px; /* This sets the height of our column at 400 pixels - if you change the text within the columns, you will need to adjust the column heights accordingly */
+}
+
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc; /* We are setting a solid border and its colors */
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* This specifies how an element is resized; vertical allows the user to resize the height of the element */
+	font-family: Copperplate; 
+}
+
+
+input[type="text"]:hover {
+	box-shadow: 0 0 18px rgb(255, 0, 0);
+}
+
+input[type="text"]:focus {
+	box-shadow: 0 0 18px rgb(255, 0, 0);
+}
+
+ 
+/* Submit button */
+input[type=submit] { /* This covers the submit button for the contact form */
+	background-color: rgb(112, 14, 14);
+	color: white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: Copperplate;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+	background-color: white; /* Makes the background turn white when hovered over */
+	color: rgb(112, 14, 14); /* Makes the font turn black when hovered over */
+	font-weight: bold; /* Makes the font bold when hovered over */
+	transform: scale(1.2); /* Makes the button increase 1.5 times in size */ 
+	transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
+
+/* Form elememt */
+form { 
+	border-radius: 5px; 
+	padding: 20px;
+    font-family: Copperplate;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+b {
+    color: white;
+}
+
+input[class="toppings"]:hover {
+    cursor: pointer;
+	box-shadow: 0 0 18px rgb(255, 0, 0);
+
+}
+
+input[class="size"]:hover {
+    cursor: pointer;
+	box-shadow: 0 0 18px rgb(255, 0, 0);
+
+}
