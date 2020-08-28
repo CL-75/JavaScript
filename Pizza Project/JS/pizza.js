@@ -1,8 +1,8 @@
 function getReceipt() {
-    var text1 = "<h3><u>Your Order:</u></h3>";
+    var text1 = "<h3><u>Your Order:</u></h3>";  //Initializing our string to be passed from func to func to build a receipt
     var runningTotal = 0;
     var sizeTotal = 0;
-    var sizeArray = document.getElementsByClassName("size");
+    var sizeArray = document.getElementsByClassName("size");   // building an array for the size selection
     for (var i=0; i<sizeArray.length; i++) {
         if(sizeArray[i].checked) {
             var selectedSize = sizeArray[i].value;
@@ -17,7 +17,7 @@ function getReceipt() {
         sizeTotal = 6;
     }
 
-    else if (selectedSize === "Medium") {
+    else if (selectedSize === "Medium") {     // Setting a base price for each pizza size
         sizeTotal = 8;
     }
     else if (selectedSize === "Large") {
@@ -29,7 +29,7 @@ function getReceipt() {
     }
 
     runningTotal = sizeTotal;
-    console.log(selectedSize + " = $" + sizeTotal + ".00");
+    console.log(selectedSize + " = $" + sizeTotal + ".00");  //These variables containing our size and total will be passed to other functions
     console.log("size text1: " + text1);
     console.log("subtotal: $" + runningTotal + ".00");
     getTopping(runningTotal, text1);
@@ -38,7 +38,7 @@ function getReceipt() {
 
 function getTopping(runningTotal, text1) {
     var toppingTotal = 0;
-    var selectedTopping = [];
+    var selectedTopping = [];  //Array for selected toppings
     var toppingArray = document.getElementsByClassName("toppings");
     for (var j=0; j<toppingArray.length; j++) {
         if(toppingArray[j].checked) {
@@ -48,7 +48,7 @@ function getTopping(runningTotal, text1) {
         }
     }
 
-    var toppingCount = selectedTopping.length;
+    var toppingCount = selectedTopping.length;   //Setting toppingCount to the length of the selected topping array
     if (toppingCount > 1) {
        toppingTotal = (toppingCount - 1);
     }
@@ -57,6 +57,7 @@ function getTopping(runningTotal, text1) {
         toppingTotal = 0;
        }
 
+    //Completeing and displaying the order total with size and toppings selected and added up
     runningTotal = (runningTotal + toppingTotal);
     console.log("total selected toppings: " + toppingCount);
     console.log(toppingCount + " topping - 1 free topping = " + "$" + toppingTotal + ".00");
